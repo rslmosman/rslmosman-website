@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mosman RSL sub-Branch</title>
+<meta name="description" content="Mosman RSL sub-Branch is a registered charity and part of RSL NSW, supporting veterans and their families in Mosman and commemorating those who served. ABN 91 897 655 022.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+<!-- Structured data: helps Google (and the Nonprofits reviewer) tie this site to the registered charity -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Mosman RSL sub-Branch",
+  "legalName": "MOSMAN R S L SUB BRANCH",
+  "url": "https://rslmosman.org",
+  "logo": "https://rslmosman.org/rsl-badge.png",
+  "email": "info@rslmosman.org",
+  "taxID": "91 897 655 022",
+  "parentOrganization": { "@type": "NGO", "name": "RSL NSW", "url": "https://www.rslnsw.org.au" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "719 Military Road",
+    "addressLocality": "Mosman",
+    "addressRegion": "NSW",
+    "postalCode": "2088",
+    "addressCountry": "AU"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --navy: #0A2342;
+    --navy-2: #12305a;
+    --poppy: #A6192E;
+    --gold: #F2B705;
+    --cream: #FAF8F5;
+    --paper: #FFFFFF;
+    --ink: #1d2433;
+    --muted: #5b6475;
+    --rule: #e6e1d8;
+    --head: 'Oswald', 'Arial Narrow', sans-serif;
+    --body: 'Source Serif 4', Georgia, serif;
+    --wrap: 1080px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 18px/1.65 var(--body); }
+  img { max-width: 100%; height: auto; }
+  a { color: var(--poppy); }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { font-family: var(--head); font-weight: 600; letter-spacing: .01em; line-height: 1.15; color: var(--navy); }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin: 0 0 .6em; }
+  h2::after { content: ""; display: block; width: 56px; height: 4px; background: var(--poppy); margin-top: .35em; }
+  h3 { font-size: 1.3rem; margin: 0 0 .4em; }
+
+  /* Header */
+  header.site { background: var(--navy); color: var(--cream); position: sticky; top: 0; z-index: 10; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--cream); text-decoration: none; }
+  .brand img { height: 46px; width: auto; }
+  .brand span { font-family: var(--head); font-size: 1.25rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
+  nav.main a { color: var(--cream); text-decoration: none; font-family: var(--head); font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; margin-left: 22px; opacity: .85; }
+  nav.main a:hover { opacity: 1; color: var(--gold); }
+
+  /* Hero */
+  .hero { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%); color: var(--cream); padding: 72px 0 84px; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 220px; gap: 48px; align-items: center; }
+  .hero h1 { color: #fff; font-size: clamp(2.3rem, 5.5vw, 3.6rem); margin: 0 0 .3em; text-transform: uppercase; letter-spacing: .02em; }
+  .hero .kicker { font-family: var(--head); color: var(--gold); letter-spacing: .12em; text-transform: uppercase; font-size: .95rem; margin: 0 0 .8em; }
+  .hero p.lead { font-size: 1.2rem; max-width: 38em; margin: 0 0 1.6em; color: #e8ecf3; }
+  .hero .badge { justify-self: center; filter: drop-shadow(0 8px 20px rgba(0,0,0,.35)); }
+  .btn { display: inline-block; font-family: var(--head); text-transform: uppercase; letter-spacing: .08em; font-size: .95rem; text-decoration: none; padding: 12px 22px; border-radius: 3px; margin: 0 10px 10px 0; }
+  .btn.primary { background: var(--poppy); color: #fff; }
+  .btn.ghost { border: 1.5px solid rgba(255,255,255,.6); color: #fff; }
+
+  section { padding: 72px 0; }
+  section.alt { background: var(--paper); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+
+  .mission { font-size: 1.3rem; border-left: 4px solid var(--poppy); padding: 4px 0 4px 22px; max-width: 44em; margin: 0 0 1.2em; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+  .card { background: var(--paper); border: 1px solid var(--rule); border-top: 4px solid var(--navy); padding: 22px 22px 18px; border-radius: 4px; }
+  section.alt .card { background: var(--cream); }
+  .card p { margin: 0 0 .6em; font-size: 1rem; }
+
+  .event { display: grid; grid-template-columns: 110px 1fr; gap: 22px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  .event:last-child { border-bottom: 0; }
+  .date { background: var(--navy); color: #fff; text-align: center; padding: 10px 6px; border-radius: 4px; font-family: var(--head); align-self: start; }
+  .date b { display: block; font-size: 2.1rem; line-height: 1; }
+  .date small { display: block; text-transform: uppercase; letter-spacing: .1em; font-size: .8rem; }
+  .event p { margin: 0 0 .4em; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 22px; margin-top: 10px; }
+  .stat { text-align: center; padding: 18px; }
+  .stat b { display: block; font-family: var(--head); font-size: 2.6rem; color: var(--poppy); line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: .95rem; }
+
+  .details { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+  dl.org { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 10px 18px; font-size: 1rem; }
+  dl.org dt { font-family: var(--head); text-transform: uppercase; letter-spacing: .05em; font-size: .85rem; color: var(--muted); padding-top: 3px; }
+  dl.org dd { margin: 0; }
+  .map { width: 100%; height: 320px; border: 1px solid var(--rule); border-radius: 4px; }
+
+  footer.site { background: var(--navy); color: #cfd6e3; padding: 44px 0 30px; font-size: .95rem; }
+  footer.site a { color: #fff; }
+  footer.site .ack { border-top: 1px solid rgba(255,255,255,.15); margin-top: 26px; padding-top: 20px; font-size: .9rem; }
+  .lwf { font-family: var(--head); color: var(--gold); letter-spacing: .2em; text-transform: uppercase; }
+
+  @media (max-width: 760px) {
+    nav.main { display: none; }
+    .hero .wrap { grid-template-columns: 1fr; }
+    .hero .badge { width: 150px; order: -1; justify-self: start; }
+    .details { grid-template-columns: 1fr; }
+    .event { grid-template-columns: 80px 1fr; gap: 16px; }
+    dl.org { grid-template-columns: 1fr; gap: 2px 0; }
+    dl.org dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="rsl-badge.png" alt="RSL badge"><span>Mosman RSL sub-Branch</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#about">About</a><a href="#programs">What we do</a><a href="#events">Events</a><a href="#history">History</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Part of RSL NSW · Registered charity</p>
+        <h1>Mosman RSL <span style="white-space:nowrap">sub-Branch</span></h1>
+        <p class="lead">We support veterans, ex-service personnel and their families in Mosman, and we keep the memory of those who served alive in our community.</p>
+        <a class="btn primary" href="#events">Upcoming commemorations</a>
+        <a class="btn ghost" href="#contact">Contact us</a>
+      </div>
+      <img class="badge" src="rsl-badge.png" width="200" alt="Returned &amp; Services League of Australia badge">
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>Our mission</h2>
+      <p class="mission">To support the wellbeing of veterans and their families in Mosman, to commemorate the service and sacrifice of Australians in war and peacekeeping, and to bring the community together in remembrance.</p>
+      <p>Mosman RSL sub-Branch is a local sub-Branch of The Returned and Services League of Australia (New South Wales Branch), known as RSL NSW. We are run by volunteers, many of them veterans themselves, and we work alongside RSL NSW, the Department of Veterans' Affairs and local organisations to make sure no veteran in our area is left without support.</p>
+      <p>The sub-Branch is a not-for-profit organisation registered with the Australian Charities and Not-for-profits Commission (ACNC). Our full registration details are listed <a href="#contact">below</a>.</p>
+    </div>
+  </section>
+
+  <section id="programs" class="alt">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Commemoration</h3>
+          <p>We organise Mosman's ANZAC Day Dawn Service at the Georges Heights Parade Ground and the Remembrance Day service each November, inviting the community, schools and local dignitaries to remember those who served.</p>
+        </div>
+        <div class="card">
+          <h3>Veteran welfare</h3>
+          <p>We visit and keep in contact with veterans and war widows in our area, including those in hospital or aged care, and help them connect with the support they are entitled to.</p>
+        </div>
+        <div class="card">
+          <h3>Advocacy &amp; support</h3>
+          <p>We help veterans and families find their way to RSL NSW advocacy services and the Department of Veterans' Affairs for claims, entitlements and wellbeing support.</p>
+        </div>
+        <div class="card">
+          <h3>Community &amp; youth</h3>
+          <p>We work with local schools and community groups to pass on the stories of Mosman's servicemen and women to the next generation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="wrap">
+      <h2>Upcoming commemorations</h2>
+      <div class="event">
+        <div class="date"><small>Nov</small><b>11</b><small>2026</small></div>
+        <div>
+          <h3>Remembrance Day Service</h3>
+          <p>Wednesday 11 November 2026 · Mosman</p>
+          <p>A service of remembrance with the traditional minute's silence at 11am. All members of the community are welcome. To attend or to lay a wreath, please contact our Secretary at <a href="mailto:secretary@rslmosman.org">secretary@rslmosman.org</a>.</p>
+        </div>
+      </div>
+      <div class="event">
+        <div class="date"><small>Apr</small><b>25</b><small>2027</small></div>
+        <div>
+          <h3>ANZAC Day Dawn Service</h3>
+          <p>Sunday 25 April 2027 · Georges Heights Parade Ground, Best Avenue, Mosman</p>
+          <p>Mosman's Dawn Service brings together veterans, serving members, families and the local community. Details will be published here closer to the date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history" class="alt">
+    <div class="wrap">
+      <h2>Our history</h2>
+      <p>Mosman RSL sub-Branch has served veterans and the Mosman community from its home on Military Road, and is registered as a charity with the ACNC since 3 December 2012.</p>
+      <p>Mosman sent many of its sons and daughters to the First World War. Their stories are documented by the community history project <a href="https://www.mosman1914-1918.net" target="_blank" rel="noopener">Mosman 1914–1918</a>.</p>
+
+      <h3 style="margin-top:1.6em">Our impact</h3>
+      <p>Each year the sub-Branch leads Mosman's ANZAC Day Dawn Service and Remembrance Day service, bringing together veterans, serving members, families, schools and local dignitaries. Throughout the year our volunteers keep in touch with local veterans and war widows and connect them with RSL NSW and Department of Veterans' Affairs support.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Organisation details &amp; contact</h2>
+      <div class="details">
+        <dl class="org">
+          <dt>Organisation</dt><dd>Mosman RSL sub-Branch, a sub-Branch of RSL NSW (The Returned and Services League of Australia, New South Wales Branch)</dd>
+          <dt>Registered name</dt><dd>MOSMAN R S L SUB BRANCH</dd>
+          <dt>ABN</dt><dd><a href="https://abr.business.gov.au/ABN/View?abn=91897655022" target="_blank" rel="noopener">91 897 655 022</a></dd>
+          <dt>Charity status</dt><dd>Registered charity with the <a href="https://www.acnc.gov.au/charity/charities?search=91897655022" target="_blank" rel="noopener">Australian Charities and Not-for-profits Commission</a> since 3 December 2012</dd>
+          <dt>NSW fundraising</dt><dd>Charitable Fundraising Number (CFN) 15032</dd>
+          <dt>Address</dt><dd>719 Military Road<br>Mosman NSW 2088<br>Australia</dd>
+          <dt>Email</dt><dd><a href="mailto:info@rslmosman.org">info@rslmosman.org</a><br>RSL NSW address: <a href="mailto:mosmansb@rslnsw.org.au">mosmansb@rslnsw.org.au</a></dd>
+          <dt>President</dt><dd>Alan Toner · <a href="mailto:president@rslmosman.org">president@rslmosman.org</a></dd>
+          <dt>Secretary</dt><dd><a href="mailto:secretary@rslmosman.org">secretary@rslmosman.org</a></dd>
+        </dl>
+        <iframe class="map" title="Map showing 719 Military Road, Mosman" loading="lazy"
+          src="https://www.google.com/maps?q=719+Military+Road,+Mosman+NSW+2088&amp;output=embed"></iframe>
+      </div>
+      <p style="margin-top:2em;font-size:1rem;color:var(--muted)">This is the official website of Mosman RSL sub-Branch. Our previous website, rslmosman.com.au, is no longer in use. For RSL NSW state-wide services, visit <a href="https://www.rslnsw.org.au" target="_blank" rel="noopener">rslnsw.org.au</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Mosman RSL sub-Branch</strong> · 719 Military Road, Mosman NSW 2088 · ABN 91 897 655 022 · <a href="mailto:info@rslmosman.org">info@rslmosman.org</a></p>
+    <p>Veterans in crisis can call Open Arms – Veterans &amp; Families Counselling on <a href="tel:1800011046">1800 011 046</a>, 24 hours a day.</p>
+    <p class="ack">We acknowledge the Traditional Custodians of the land on which we meet, and pay our respects to Elders past and present. We also honour the Aboriginal and Torres Strait Islander men and women who have served in Australia's defence forces.</p>
+    <p class="lwf">Lest we forget</p>
+  </div>
+</footer>
+
+</body>
+</html>
